@@ -57,12 +57,25 @@
 
 ## Configure GitHub Webhook:
 
-In your GitHub repository, go to "Settings" > "Webhooks" > "Add webhook".
-Set the Payload URL to http://your-ec2-instance-ip:5000/createJira (replace 5000 with the actual port if different).
-Set the Content type to application/json.
-Optionally, set a secret if you want to validate the authenticity of the incoming requests.
-Select the events you want to trigger the webhook (e.g., Issue comments).
-Add the webhook.
+1. Navigate to your GitHub repository on the GitHub website.
+
+2. Go to the "Settings" tab of your repository.
+
+3. In the left sidebar, click on "Webhooks."
+
+4. Click the "Add webhook" button.
+
+5. Set the "Payload URL" to `http://your-ec2-instance-ip:5000/createJira` (replace 5000 with the actual port if different).
+
+6. Set the "Content type" to `application/json`.
+
+7. Optionally, set a "Secret" if you want to validate the authenticity of the incoming requests.
+
+8. Choose the specific events that should trigger the webhook. For this project, you might choose "Issue comments."
+
+9. Click the "Add webhook" button to save your webhook configuration.
+
+
 
 ## Acknowledgments
 
